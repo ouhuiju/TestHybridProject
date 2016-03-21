@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewJavascriptBridge.h"
+#import <Masonry/Masonry.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIWebViewDelegate>
 
+@property (nonatomic, strong) WebViewJavascriptBridge *bridge;
+@property (nonatomic, strong) UIWebView *webView;
 
 @end
 
